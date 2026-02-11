@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Jodek Potasu - Pełna Specyfikacja Edukacyjna</title>
+<title>Jodek Potasu - Projekt na Chemię</title>
 <style>
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #121212; color: #ddd; margin: 0; padding: 20px; line-height: 1.8; animation: fadeIn 0.8s ease-in; }
@@ -21,7 +21,6 @@ h1 { color: #fff; font-size: 3rem; margin-bottom: 5px; text-shadow: 0 0 10px rgb
 .theory-box { background: #1a2a2f; padding: 30px; border-radius: 15px; border-right: 4px solid #00e5ff; margin: 25px 0; border-left: 1px solid #333; }
 .equation-box { background: #252525; padding: 30px; border-radius: 10px; font-family: 'Courier New', monospace; color: #00e5ff; border: 1px dashed #555; text-align: center; font-size: 1.4em; margin: 25px 0; }
 img { width: 100%; height: 450px; object-fit: cover; border-radius: 20px; margin-bottom: 40px; border: 1px solid #444; }
-/* Styl dla zastosowań jedno pod drugim */
 .usage-list { display: flex; flex-direction: column; gap: 25px; }
 .usage-card { background: #252525; padding: 30px; border-radius: 15px; border-left: 4px solid #00e5ff; transition: 0.3s; }
 .usage-card:hover { background: #2a2a2a; transform: scale(1.01); }
@@ -35,115 +34,94 @@ img { width: 100%; height: 450px; object-fit: cover; border-radius: 20px; margin
 </head>
 <body>
 <div class="container">
-<a href="index.html" class="btn-back">← POWRÓT DO KATALOGU</a>
+<a href="index.html" class="btn-back">← WRÓĆ DO KATALOGU</a>
 <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=90" alt="Laboratorium">
 <h1>Jodek Potasu</h1>
 <div class="formula-large">KI</div>
-<div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-top: 20px;">Profil Reaktywności Chemicznej:</div>
+<div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-top: 20px;">Jak bardzo reaguje?</div>
 <div class="stat-bar-bg"><div class="stat-bar-fill"></div></div>
+
 <div class="section">
-<h3>I. Wstęp Teoretyczny</h3>
-<p>Jodek potasu (łac. <em>Kalii iodidum</em>) jest związkiem nieorganicznym o kluczowym znaczeniu dla biologii i przemysłu. Występuje w postaci bezbarwnych lub białych kryształów o słonym, gorzkawym smaku. Jest to sól potasowa kwasu jodowodorowego, która charakteryzuje się wyjątkowo wysoką higroskopijnością oraz doskonałą rozpuszczalnością w rozpuszczalnikach polarnych.</p>
+<h3>I. Co warto wiedzieć?</h3>
+<p>Jodek potasu to białe kryształki, które na pierwszy rzut oka wyglądają jak zwykła sól kuchenna. Bardzo dobrze rozpuszczają się w wodzie, ale mają jeden minus – nie lubią słońca. Jeśli zostawisz je na świetle, zaczną żółknąć, bo jodek powoli zamienia się w wolny jod.</p>
 <div class="theory-box">
-W strukturze krystalicznej jodek potasu wykazuje wiązania jonowe o wysokiej energii sieciowej. Ważną cechą chemiczną jest łatwość utleniania jonu jodkowego do wolnego jodu pod wpływem silnych utleniaczy lub promieniowania UV, co objawia się charakterystycznym żółknięciem preparatu.
+Najważniejszą rzeczą, o którą może zapytać nauczyciel, jest to, że KI to źródło jodu. Nasza tarczyca potrzebuje go do pracy, ale jodek potasu to też nas ochroniarz, który chroni nas przed promieniowaniem.
 </div>
 </div>
+
 <div class="section">
-<h3>II. Szczegółowe Dane Techniczne</h3>
+<h3>II. Dane techniczne )</h3>
 <table class="spec-table">
-<tr><td class="spec-label">Numer CAS</td><td>7681-11-0</td></tr>
-<tr><td class="spec-label">Masa molowa</td><td>166,0028 g/mol</td></tr>
-<tr><td class="spec-label">Stan skupienia</td><td>Stały (krystaliczny)</td></tr>
-<tr><td class="spec-label">Gęstość</td><td>3,12 g/cm³</td></tr>
-<tr><td class="spec-label">Temperatura topnienia</td><td>681 °C</td></tr>
-<tr><td class="spec-label">Temperatura wrzenia</td><td>1330 °C</td></tr>
-<tr><td class="spec-label">Rozpuszczalność w wodzie</td><td>1430 g/dm³ (25°C)</td></tr>
-<tr><td class="spec-label">Współczynnik załamania</td><td>1,677</td></tr>
+<tr><td class="spec-label">Masa molowa</td><td>166 g/mol</td></tr>
+<tr><td class="spec-label">Stan skupienia</td><td>Stały (kryształy)</td></tr>
+<tr><td class="spec-label">Gęstość</td><td>3,12 g/cm³ (dość ciężki)</td></tr>
+<tr><td class="spec-label">Temp. topnienia</td><td>681 °C</td></tr>
+<tr><td class="spec-label">Rozpuszczalność</td><td>Bardzo dobra (półtora kg w litrze wody!)</td></tr>
+<tr><td class="spec-label">Smak</td><td>Słono-gorzki (ale nie próbuj!)</td></tr>
 </table>
 </div>
+
 <div class="section">
-<h3>III. Procesy Otrzymywania</h3>
-<p>Główna ścieżka syntezy przemysłowej opiera się na reakcji jodanu potasu z węglem lub bezpośredniej reakcji wodorotlenku potasu z jodem pierwiastkowym:</p>
+<h3>III. Jak to się robi?</h3>
+<p>W dużych ilościach jodek potasu robi się mieszając jod z sodą żrącą (wodorotlenkiem potasu). Równanie wygląda tak:</p>
 <div class="equation-box">
 6KOH + 3I₂ → 5KI + KIO₃ + 3H₂O
 </div>
-<p>W kolejnym etapie jodan potasu ($KIO_3$) jest redukowany, aby zmaksymalizować wydajność czystego jodku potasu, który następnie poddawany jest wielokrotnej krystalizacji w celu uzyskania czystości analitycznej.</p>
 </div>
+
 <div class="section">
-<h3>IV. Szerokie Zastosowanie w Przemyśle i Nauce</h3>
+<h3>IV. Do czego go używamy?</h3>
 <div class="usage-list">
 <div class="usage-card">
-<h4>1. Ochrona Radiologiczna</h4>
-<p>Jest to najważniejsze zastosowanie w kontekście bezpieczeństwa publicznego. W przypadku awarii jądrowej, podawanie jodku potasu ma na celu nasycenie tarczycy stabilnym jodem. Dzięki temu organ ten nie przyjmuje radioaktywnego izotopu jodu-131, co zapobiega chorobie popromiennej i nowotworom.</p>
+<h4>1. Ochrona przed promieniowaniem</h4>
+<p>To słynne tabletki, o których mówi się przy awariach elektrowni atomowych. Jodek potasu zapełnia naszą tarczycę zdrowym jodem, żeby nie wchłonęła ona tego groźnego radioaktywnego z powietrza.</p>
 </div>
 <div class="usage-card">
-<h4>2. Medycyna i Farmakologia</h4>
-<p>Stosowany w leczeniu niedoborów jodu oraz jako środek wykrztuśny w chorobach dróg oddechowych. Jest również niezbędny do produkcji płynu Lugola, który posiada silne właściwości odkażające i antyseptyczne.</p>
+<h4>2. Medycyna i odkażanie</h4>
+<p>KI jest potrzebny do zrobienia <strong>płynu Lugola</strong>. To ten ciemny płyn, którym smaruje się rany albo kiedyś gardło, żeby zutylizować bakterie.</p>
 </div>
 <div class="usage-card">
-<h4>3. Przemysł Spożywczy</h4>
-<p>Wykorzystywany jako kluczowy dodatek do soli kuchennej (sól jodowana). Zapobiega to powstawaniu wola endemicznego oraz wspiera prawidłowy rozwój umysłowy u dzieci poprzez regulację pracy hormonów tarczycy.</p>
+<h4>3. Sól w kuchni</h4>
+<p>Większość soli, którą mamy w domu, to sól jodowana. Dodaje się do niej odrobinę jodku potasu, żebyśmy byli mądrzejsi i nie mieli problemów z tarczycą.</p>
 </div>
 <div class="usage-card">
-<h4>4. Fotografia i Optyka</h4>
-<p>W tradycyjnej fotografii analogowej jodek potasu służył do wytwarzania światłoczułego jodku srebra. W optyce nowoczesnej kryształy KI domieszkowane talem są używane jako scyntylatory w detektorach promieniowania rentgenowskiego.</p>
-</div>
-<div class="usage-card">
-<h4>5. Analiza Chemiczna (Jodometria)</h4>
-<p>Służy jako podstawowy odczynnik w chemii analitycznej do oznaczania stężenia utleniaczy (np. chloru w wodzie basenowej). Reakcja opiera się na wydzielaniu jodu z roztworu KI, który następnie miareczkuje się tiosiarczanem sodu.</p>
-</div>
-<div class="usage-card">
-<h4>6. Kataliza Laboratoryjna</h4>
-<p>Znany z roli katalizatora w efektownych reakcjach chemicznych, takich jak gwałtowny rozkład nadtlenku wodoru (doświadczenie "pasta do zębów dla słonia"), gdzie drastycznie obniża energię aktywacji reakcji.</p>
+<h4>4. Efektowne eksperymenty</h4>
+<p>Bez jodku potasu nie byłoby "pasty do zębów dla słonia"! KI działa tam jako katalizator – sprawia, że zwykła woda utleniona błyskawicznie zamienia się w wielką górę piany.</p>
 </div>
 </div>
 </div>
+
+
+
 <div class="fun-fact">
-<strong>Ciekawostka: Chemiczny Kameleon</strong> Czy wiesz, że jodek potasu jest bezbarwny, ale po dodaniu do niego odrobiny skrobi i utleniacza, roztwór natychmiast zmienia kolor na ciemnogranatowy? To jedna z najbardziej czułych reakcji wykrywania skrobi, stosowana powszechnie w testach jakości żywności.
+<strong>Ciekawostka: Test na ziemniaka</strong> Chcesz sprawdzić, czy w czymś jest skrobia np. w kiełbasie albo ziemniaku? Dodaj kroplę roztworu jodku z jodem. Jeśli kolor zmieni się na ciemny granat, to znaczy, że jest tam skrobia
 </div>
+
 <div class="section">
-<h3>V. Bezpieczeństwo i Magazynowanie</h3>
+<h3>V. Bezpieczeństwo</h3>
 <div class="warning-zone">
-<p><strong>Procedury MSDS:</strong> Substancja nie jest sklasyfikowana jako toksyczna w małych ilościach, jednak pył może powodować silne podrażnienia dróg oddechowych i oczu. Przechowywać wyłącznie w oryginalnych, ciemnych opakowaniach (szkło oranżowe), z dala od kwasów i silnych utleniaczy. Chronić przed bezpośrednim działaniem promieni słonecznych.</p>
+<p><strong>WAŻNE:</strong> Jodek potasu nie jest trucizną, ale w dużych ilościach może podrażnić oczy i płuca (jeśli wdychasz pył). Najważniejsze to trzymać go w ciemnej butelce tzw. szkło oranżowe, bo inaczej słońce go zepsuje.</p>
 </div>
 </div>
 
-<!-- ===== DODANA SEKCJA VI ===== -->
 <div class="section">
-<h3>VI. Jodek Potasu w Gospodarstwie Domowym</h3>
+<h3>VI. Jodek Potasu w Twoim domu</h3>
 <div class="usage-list">
-
 <div class="usage-card">
-<h4>1. Sól Jodowana</h4>
-<p>Najpowszechniejsze źródło jodku potasu w domu. Dodawany do soli kuchennej w celu zapobiegania niedoborom jodu i wspierania prawidłowej pracy tarczycy.</p>
+<h4>1. Sól kuchenna</h4>
+<p>To najprostszy sposób, żeby go znaleźć. Spójrz na opakowanie soli w kuchni.</p>
 </div>
-
 <div class="usage-card">
-<h4>2. Tabletki z Jodkiem Potasu</h4>
-<p>Przechowywane w domowej apteczce jako środek ochrony tarczycy w sytuacjach zagrożenia radiacyjnego.</p>
+<h4>2. Domowa apteczka</h4>
+<p>Płyn Lugola albo jodyna to najlepsi koledzy jodku potasu w walce z zarazkami.</p>
 </div>
-
 <div class="usage-card">
-<h4>3. Płyn Lugola</h4>
-<p>Roztwór zawierający jod i jodek potasu, stosowany do dezynfekcji oraz w celach medycznych.</p>
+<h4>3. Suplementy</h4>
+<p>Wiele witamin dla dzieci i dorosłych ma w składzie jodek, żeby wspierać koncentrację i mózg.</p>
 </div>
-
-<div class="usage-card">
-<h4>4. Suplementy Diety</h4>
-<p>Preparaty wspomagające utrzymanie prawidłowego poziomu jodu w organizmie.</p>
-</div>
-
-<div class="usage-card">
-<h4>5. Preparaty Antyseptyczne</h4>
-<p>Niektóre środki odkażające zawierają związki jodu stabilizowane przy użyciu jodku potasu.</p>
-</div>
-
 </div>
 </div>
 
-<div style="margin-top: 50px; text-align: center; color: #666; font-size: 0.8rem; border-top: 1px solid #333; padding-top: 20px;">
-
-</div>
 </div>
 </body>
 </html>
