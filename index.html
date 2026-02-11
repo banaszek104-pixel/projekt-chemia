@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemia Przyszłości - Katalog Soli</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --main-bg: #0b0e11; 
+            --card-bg: #161b22; 
+            --accent: #00e5ff; 
+            --text: #e0e0e0; 
+            --accent-glow: rgba(0, 229, 255, 0.4);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            background-color: var(--main-bg); 
+            color: var(--text); 
+            margin: 0; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        header { 
+            background: radial-gradient(circle at center, #1a3a4a 0%, #0f2027 100%);
+            padding: 80px 20px; 
+            text-align: center; 
+            border-bottom: 1px solid rgba(0, 229, 255, 0.3);
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 2px;
+            background: var(--accent);
+            box-shadow: 0 0 20px var(--accent);
+        }
+
+        h1 { 
+            margin: 0; 
+            font-size: 3rem; 
+            letter-spacing: 5px; 
+            text-transform: uppercase;
+            text-shadow: 0 0 15px var(--accent-glow);
+        }
+
+        p.subtitle { 
+            color: var(--accent); 
+            font-size: 1.1rem; 
+            font-weight: 300;
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+        
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 60px 20px; 
+            flex: 1; 
+        }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 35px;
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        .card { 
+            background: var(--card-bg); 
+            border-radius: 20px; 
+            overflow: hidden; 
+            border: 1px solid #30363d; 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+            display: flex; 
+            flex-direction: column;
+            position: relative;
+        }
+
+        .card:hover { 
+            transform: translateY(-12px); 
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 229, 255, 0.1); 
+            border-color: var(--accent); 
+        }
+        
+        .card-img-wrapper {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .card-img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            filter: brightness(0.7); 
+            transition: 0.5s;
+        }
+
+        .card:hover .card-img {
+            transform: scale(1.1);
+            filter: brightness(0.9);
+        }
+
+        .card-body { 
+            padding: 25px; 
+            flex-grow: 1; 
+            display: flex; 
+            flex-direction: column; 
+        }
+        
+        h2 { color: white; margin: 0 0 10px 0; font-size: 1.5rem; }
+        
+        .formula { 
+            color: var(--accent); 
+            font-family: 'Courier New', monospace; 
+            font-size: 1.2rem; 
+            font-weight: bold; 
+            margin-bottom: 15px; 
+            display: inline-block;
+            background: rgba(0, 229, 255, 0.1);
+            padding: 2px 10px;
+            border-radius: 5px;
+        }
+
+        .desc { 
+            font-size: 0.95rem; 
+            color: #8b949e; 
+            line-height: 1.6; 
+            flex-grow: 1; 
+        }
+        
+        .btn {  
+            display: block; 
+            text-align: center; 
+            background: transparent; 
+            color: var(--accent); 
+            border: 1px solid var(--accent); 
+            padding: 12px; 
+            margin-top: 25px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 12px; 
+            transition: 0.3s; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+        }
+
+        .btn:hover { 
+            background: var(--accent); 
+            color: #0d1117; 
+            box-shadow: 0 0 20px var(--accent-glow);
+        }
+        
+        .biblio-section { 
+            margin-top: 100px; 
+            padding: 40px; 
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 20px;
+            border: 1px solid #30363d;
+        }
+
+        .biblio-section h3 { 
+            color: var(--accent); 
+            font-size: 1.2rem; 
+            margin-bottom: 20px; 
+            text-transform: uppercase;
+        }
+
+        .biblio-section ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+
+        .biblio-section li {
+            margin-bottom: 12px;
+            color: #8b949e;
+            display: flex;
+            align-items: center;
+        }
+
+        .biblio-section li::before {
+            content: '•';
+            margin-right: 15px;
+            color: var(--accent);
+        }
+        
+        footer { 
+            background: #0d1117; 
+            text-align: center; 
+            padding: 40px 20px; 
+            border-top: 1px solid #30363d; 
+            margin-top: auto;
+        }
+
+        .author-name { 
+            color: var(--accent); 
+            font-weight: bold; 
+            font-size: 1.2rem;
+            text-shadow: 0 0 10px var(--accent-glow);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CHEMIA PRZYSZŁOŚCI</h1>
+    <p class="subtitle">Katalog Specjalistycznych Soli Nieorganicznych</p>
+</header>
+
+<div class="container">
+    <div class="grid">
+
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1584813470613-5b1c1cad3d69?auto=format&fit=crop&w=600&q=80" class="card-img" alt="Podchloryn">
+            </div>
+            <div class="card-body">
+                <h2>Podchloryn Sodu</h2>
+                <div><span class="formula">NaClO</span></div>
+                <p class="desc">Potężny utleniacz i podstawa współczesnej dezynfekcji. Poznaj mechanizm niszczenia patogenów na poziomie komórkowym.</p>
+                <a href="podchloryn.html" class="btn">Szczegóły substancji</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80" class="card-img" alt="Jodek">
+            </div>
+            <div class="card-body">
+                <h2>Jodek Potasu</h2>
+                <div><span class="formula">KI</span></div>
+                <p class="desc">Kluczowy związek w medycynie nuklearnej i ochronie radiologicznej. Dowiedz się, jak chroni tarczycę przed izotopami.</p>
+                <a href="jodek.html" class="btn">Szczegóły substancji</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=600&q=80" class="card-img" alt="Szkło wodne">
+            </div>
+            <div class="card-body">
+                <h2>Krzemian Sodu</h2>
+                <div><span class="formula">Na<sub>2</sub>SiO<sub>3</sub></span></div>
+                <p class="desc">Fascynujący materiał o strukturze polimerowej. Odkryj jego rolę w tworzeniu niepalnych powłok ochronnych.</p>
+                <a href="krzemian.html" class="btn">Szczegóły substancji</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1559563362-c667ba5f5480?auto=format&fit=crop&w=600&q=80" class="card-img" alt="Stomatologia">
+            </div>
+            <div class="card-body">
+                <h2>Fluorek Sodu</h2>
+                <div><span class="formula">NaF</span></div>
+                <p class="desc">Fundament nowoczesnej profilaktyki stomatologicznej. Zobacz, jak jony fluorkowe wzmacniają strukturę hydroksyapatytu.</p>
+                <a href="fluor.html" class="btn">Szczegóły substancji</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="biblio-section">
+        <h3>Bibliografia</h3>
+        <ul>
+            <li>Podręcznik akademicki "Chemia Nieorganiczna" - PWN</li>
+            <li>Bazy danych toksykologicznych i MSDS</li>
+            <li>Publikacje National Center for Biotechnology Information (NCBI)</li>
+            <li>Archiwa cyfrowe Royal Society of Chemistry</li>
+            <li>Wujek Google</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>Projekt Na Chemię: <span class="author-name">Szymon Banach</span></p>
+    <p style="font-size: 12px; opacity: 0.5; letter-spacing: 2px;">Data Stworzenia: luty 2026 | Czas Pracy: ok. 6-7h</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Krzemian Sodu - Pełna Specyfikacja Edukacyjna</title>
+    <style>
+        /* Styl identyczny jak wyżej, zmienia się tylko kolor paska i treść */
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #121212; color: #ddd; margin: 0; padding: 20px; line-height: 1.8; animation: fadeIn 0.8s ease-in; }
+        .container { max-width: 900px; margin: 0 auto; background: #1e1e1e; padding: 50px; border-radius: 20px; border: 1px solid #333; box-shadow: 0 0 40px rgba(0,0,0,0.6); }
+        .btn-back { display: inline-block; color: #00e5ff; text-decoration: none; border: 1px solid #00e5ff; padding: 10px 25px; border-radius: 50px; margin-bottom: 30px; transition: 0.3s; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        .btn-back:hover { background: #00e5ff; color: #000; box-shadow: 0 0 15px rgba(0, 229, 255, 0.4); }
+        h1 { color: #fff; font-size: 3rem; margin-bottom: 5px; text-shadow: 0 0 10px rgba(0, 229, 255, 0.3); }
+        .formula-large { font-family: 'Courier New', monospace; font-size: 4em; color: #00e5ff; font-weight: bold; margin-bottom: 10px; letter-spacing: -2px; text-shadow: 0 0 20px rgba(0, 229, 255, 0.6); display: inline-block; }
+        .stat-bar-bg { width: 100%; height: 12px; background: #333; border-radius: 6px; margin: 15px 0 35px 0; }
+        .stat-bar-fill { height: 100%; background: #00e5ff; border-radius: 6px; box-shadow: 0 0 15px #00e5ff; width: 60%; }
+        .spec-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #252525; border-radius: 12px; overflow: hidden; border: 1px solid #333; }
+        .spec-table td { padding: 18px; border-bottom: 1px solid #333; }
+        .spec-label { color: #00e5ff; font-weight: bold; width: 40%; background: rgba(0, 229, 255, 0.05); }
+        .section { margin-top: 60px; }
+        .section h3 { color: #fff; font-size: 1.6rem; text-transform: uppercase; letter-spacing: 3px; border-left: 6px solid #00e5ff; padding-left: 20px; margin-bottom: 30px; }
+        .theory-box { background: #1a2a2f; padding: 30px; border-radius: 15px; border-right: 4px solid #00e5ff; margin: 25px 0; border-left: 1px solid #333; }
+        .equation-box { background: #252525; padding: 30px; border-radius: 10px; font-family: 'Courier New', monospace; color: #00e5ff; border: 1px dashed #555; text-align: center; font-size: 1.4em; margin: 25px 0; }
+        img { width: 100%; height: 450px; object-fit: cover; border-radius: 20px; margin-bottom: 40px; border: 1px solid #444; }
+        .usage-list { display: flex; flex-direction: column; gap: 25px; }
+        .usage-card { background: #252525; padding: 30px; border-radius: 15px; border-left: 4px solid #00e5ff; transition: 0.3s; }
+        .usage-card:hover { background: #2a2a2a; transform: scale(1.01); }
+        .usage-card h4 { color: #00e5ff; margin-top: 0; text-transform: uppercase; font-size: 1.1rem; margin-bottom: 10px; }
+        .usage-card p { margin: 0; color: #ccc; font-size: 0.95rem; }
+        .warning-zone { background: rgba(255, 82, 82, 0.05); border: 1px solid #ff5252; padding: 30px; border-radius: 15px; margin-top: 50px; position: relative; }
+        .warning-zone::before { content: "!"; position: absolute; top: -20px; left: 20px; background: #ff5252; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5rem; }
+        .fun-fact { background: linear-gradient(135deg, #1e1e1e, #2c3e50); border-radius: 15px; padding: 30px; margin-top: 50px; border: 1px solid #ffd700; }
+        .fun-fact strong { color: #ffd700; font-size: 1.2rem; display: block; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="btn-back">← POWRÓT DO KATALOGU</a>
+        
+        <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1200&q=90" alt="Szkło wodne">
+        
+        <h1>Krzemian Sodu</h1>
+        <div class="formula-large">Na₂SiO₃</div>
+        
+        <div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-top: 20px;">Profil Reaktywności Chemicznej:</div>
+        <div class="stat-bar-bg"><div class="stat-bar-fill"></div></div>
+        
+        <div class="section">
+            <h3>I. Wstęp Teoretyczny</h3>
+            <p>Krzemian sodu, powszechnie znany jako "szkło wodne", to związek nieorganiczny tworzący gęste, lepkie roztwory. W formie stałej jest białym proszkiem lub szklistą masą. Jego unikalne właściwości wynikają ze zdolności do polimeryzacji – po odparowaniu wody jony krzemianowe tworzą sztywną, niemal niezniszczalną sieć.</p>
+            <div class="theory-box">
+                Zaschnięty krzemian sodu wykazuje doskonałą odporność na wysokie temperatury oraz działanie czynników chemicznych, co czyni go niezastąpionym materiałem w budownictwie ochronnym.
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>II. Szczegółowe Dane Techniczne</h3>
+            <table class="spec-table">
+                <tr><td class="spec-label">Masa molowa</td><td>122,06 g/mol</td></tr>
+                <tr><td class="spec-label">Postać</td><td>Lepka ciecz (roztwór)</td></tr>
+                <tr><td class="spec-label">Gęstość (roztwór)</td><td>1,4 - 1,6 g/cm³</td></tr>
+                <tr><td class="spec-label">pH</td><td>Silnie zasadowe (~12-13)</td></tr>
+                <tr><td class="spec-label">Temperatura topnienia</td><td>1088 °C</td></tr>
+                <tr><td class="spec-label">Lepkość</td><td>Bardzo wysoka (syropowata)</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3>III. Procesy Otrzymywania</h3>
+            <p>Najstarszą i najpopularniejszą metodą jest stapianie sody z piaskiem kwarcowym w temperaturze ok. 1400 °C:</p>
+            <div class="equation-box">
+                Na₂CO₃ + SiO₂ → Na₂SiO₃ + CO₂
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>IV. Szerokie Zastosowanie w Przemyśle i Nauce</h3>
+            <div class="usage-list">
+                <div class="usage-card">
+                    <h4>1. Impregnacja Przeciwpożarowa</h4>
+                    <p>Stosowany do powlekania drewna i tkanin. Tworzy powłokę, która pod wpływem ognia nie pali się, lecz pęcznieje, izolując materiał od tlenu i wysokiej temperatury.</p>
+                </div>
+                <div class="usage-card">
+                    <h4>2. Przemysł Budowlany</h4>
+                    <p>Dodatek do betonu przyspieszający wiązanie i zwiększający szczelność. Służy również do osuszania zawilgoconych fundamentów poprzez tworzenie bariery dla wód gruntowych.</p>
+                </div>
+                <div class="usage-card">
+                    <h4>3. Produkcja Detergentów</h4>
+                    <p>Zapobiega korozji części metalowych w pralkach i zmywarkach. Stabilizuje pH wody, co zwiększa skuteczność proszków i płynów do prania.</p>
+                </div>
+                <div class="usage-card">
+                    <h4>4. Konserwacja Żywności</h4>
+                    <p>Dawniej używany do przechowywania jaj kurzych. Roztwór krzemianu zamyka pory w skorupce, odcinając dopływ powietrza i bakterii do wnętrza jaja.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>Ciekawostka: Chemiczny Ogród</strong>
+            W roztworze krzemianu sodu można hodować tzw. "chemiczne ogrody". Wrzucenie kryształów soli metali (np. miedzi lub kobaltu) powoduje wyrastanie barwnych struktur przypominających algi lub koralowce.
+        </div>
+
+        <div class="section">
+            <h3>V. Bezpieczeństwo i Magazynowanie</h3>
+            <div class="warning-zone">
+                <p><strong>UWAGA:</strong> Krzemian sodu jest silnie zasadowy. Kontakt ze skórą może prowadzić do poparzeń, a dostanie się do oczu jest skrajnie niebezpieczne. Zawsze pracuj w rękawicach i okularach ochronnych.</p>
+            </div>
+        </div>
+
+        <!-- Sekcja VI dodana -->
+        <div class="section">
+            <h3>VI. Gdzie w Gospodarstwie Domowym Znajdziesz Krzemian Sodu?</h3>
+            <div class="usage-list">
+                <div class="usage-card">
+                    <h4>1. Środki czystości</h4>
+                    <p>Niektóre mydła w płynie, detergenty i środki do szorowania zawierają krzemian sodu jako składnik zwiększający skuteczność i ochronę powierzchni metalowych.</p>
+                </div>
+                <div class="usage-card">
+                    <h4>2. Preparaty do drewna</h4>
+                    <p>Impregnaty do drewna i preparaty przeciwogniowe często zawierają krzemian sodu dla zwiększenia odporności na ogień i wodę.</p>
+                </div>
+                <div class="usage-card">
+                    <h4>3. Farby i lakiery</h4>
+                    <p>Krzemian sodu stosuje się w niektórych farbach do betonu lub metalu, aby nadać powłokom większą trwałość i odporność chemiczną.</p>
+                </div>
+                <div class="usage-card">
+                    <h4>4. Ochrona zbiorników i rur</h4>
+                    <p>W gospodarstwach rolnych można spotkać krzemian sodu w środkach zapobiegających korozji w zbiornikach wodnych, rurach i systemach nawadniania.</p>
+                </div>
+                <div class="usage-card">
+                    <h4>5. Produkty chemiczne do ogrodu</h4>
+                    <p>Niektóre nawozy i środki ochrony roślin zawierają niewielkie ilości krzemianu sodu, który wspomaga trwałość i stabilność chemiczną preparatów.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

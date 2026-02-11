@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Fluorek Sodu - Pełna Specyfikacja Edukacyjna</title>
+    <style>
+        /* Styl identyczny, zmieniamy kolor paska na ciemniejszy cyjan i treść */
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #121212; color: #ddd; margin: 0; padding: 20px; line-height: 1.8; animation: fadeIn 0.8s ease-in; }
+        .container { max-width: 900px; margin: 0 auto; background: #1e1e1e; padding: 50px; border-radius: 20px; border: 1px solid #333; box-shadow: 0 0 40px rgba(0,0,0,0.6); }
+        .btn-back { display: inline-block; color: #00e5ff; text-decoration: none; border: 1px solid #00e5ff; padding: 10px 25px; border-radius: 50px; margin-bottom: 30px; transition: 0.3s; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        .btn-back:hover { background: #00e5ff; color: #000; box-shadow: 0 0 15px rgba(0, 229, 255, 0.4); }
+        h1 { color: #fff; font-size: 3rem; margin-bottom: 5px; text-shadow: 0 0 10px rgba(0, 229, 255, 0.3); }
+        .formula-large { font-family: 'Courier New', monospace; font-size: 4em; color: #00e5ff; font-weight: bold; margin-bottom: 10px; letter-spacing: -2px; text-shadow: 0 0 20px rgba(0, 229, 255, 0.6); display: inline-block; }
+        .stat-bar-bg { width: 100%; height: 12px; background: #333; border-radius: 6px; margin: 15px 0 35px 0; }
+        .stat-bar-fill { height: 100%; background: #ff5252; border-radius: 6px; box-shadow: 0 0 15px #ff5252; width: 85%; }
+        .spec-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #252525; border-radius: 12px; overflow: hidden; border: 1px solid #333; }
+        .spec-table td { padding: 18px; border-bottom: 1px solid #333; }
+        .spec-label { color: #00e5ff; font-weight: bold; width: 40%; background: rgba(0, 229, 255, 0.05); }
+        .section { margin-top: 60px; }
+        .section h3 { color: #fff; font-size: 1.6rem; text-transform: uppercase; letter-spacing: 3px; border-left: 6px solid #00e5ff; padding-left: 20px; margin-bottom: 30px; }
+        .theory-box { background: #1a2a2f; padding: 30px; border-radius: 15px; border-right: 4px solid #00e5ff; margin: 25px 0; border-left: 1px solid #333; }
+        .equation-box { background: #252525; padding: 30px; border-radius: 10px; font-family: 'Courier New', monospace; color: #00e5ff; border: 1px dashed #555; text-align: center; font-size: 1.4em; margin: 25px 0; }
+        img { width: 100%; height: 450px; object-fit: cover; border-radius: 20px; margin-bottom: 40px; border: 1px solid #444; }
+        .usage-list { display: flex; flex-direction: column; gap: 25px; }
+        .usage-card { background: #252525; padding: 30px; border-radius: 15px; border-left: 4px solid #00e5ff; transition: 0.3s; }
+        .usage-card:hover { background: #2a2a2a; transform: scale(1.01); }
+        .usage-card h4 { color: #00e5ff; margin-top: 0; text-transform: uppercase; font-size: 1.1rem; margin-bottom: 10px; }
+        .usage-card p { margin: 0; color: #ccc; font-size: 0.95rem; }
+        .warning-zone { background: rgba(255, 82, 82, 0.05); border: 1px solid #ff5252; padding: 30px; border-radius: 15px; margin-top: 50px; position: relative; }
+        .warning-zone::before { content: "!"; position: absolute; top: -20px; left: 20px; background: #ff5252; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5rem; }
+        .fun-fact { background: linear-gradient(135deg, #1e1e1e, #2c3e50); border-radius: 15px; padding: 30px; margin-top: 50px; border: 1px solid #ffd700; }
+        .fun-fact strong { color: #ffd700; font-size: 1.2rem; display: block; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="btn-back">← POWRÓT DO KATALOGU</a>
+        
+        <img src="https://images.unsplash.com/photo-1559563362-c667ba5f5480?auto=format&fit=crop&w=1200&q=90" alt="Fluor">
+        
+        <h1>Fluorek Sodu</h1>
+        <div class="formula-large">NaF</div>
+        
+        <div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-top: 20px;">Profil Reaktywności Chemicznej:</div>
+        <div class="stat-bar-bg"><div class="stat-bar-fill"></div></div>
+        
+        <div class="section">
+            <h3>I. Wstęp Teoretyczny</h3>
+            <p>Fluorek sodu to bezbarwny, krystaliczny związek nieorganiczny, będący solą sodową kwasu fluorowodorowego. Jest to związek o kluczowym znaczeniu dla zdrowia publicznego oraz metalurgii. Jego główną cechą jest dostarczanie jonów fluorkowych, które wbudowują się w struktury twarde organizmu, takie jak kości i szkliwo.</p>
+            <div class="theory-box">
+                Mechanizm działania fluoru w stomatologii polega na przekształcaniu hydroksyapatytu szkliwa w fluoroapatyt, który jest znacznie twardszy i bardziej odporny na działanie kwasów bakteryjnych.
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>II. Szczegółowe Dane Techniczne</h3>
+            <table class="spec-table">
+                <tr><td class="spec-label">Masa molowa</td><td>41,99 g/mol</td></tr>
+                <tr><td class="spec-label">Postać</td><td>Biały proszek lub kryształy</td></tr>
+                <tr><td class="spec-label">Temperatura topnienia</td><td>993 °C</td></tr>
+                <tr><td class="spec-label">Temperatura wrzenia</td><td>1695 °C</td></tr>
+                <tr><td class="spec-label">Rozpuszczalność</td><td>41 g/dm³ (25°C)</td></tr>
+                <tr><td class="spec-label">Gęstość</td><td>2,56 g/cm³</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3>III. Procesy Otrzymywania</h3>
+            <p>Fluorek sodu otrzymuje się zazwyczaj poprzez zobojętnianie kwasu fluorowodorowego za pomocą wodorotlenku sodu:</p>
+            <div class="equation-box">
+                HF + NaOH → NaF + H₂O
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>IV. Szerokie Zastosowanie w Przemyśle i Nauce</h3>
+            <div class="usage-list">
+                <div class="usage-card">
+                    <h4>1. Profilaktyka Przeciwpróchnicza</h4>
+                    <p>Składnik past do zębów, płukanek oraz żeli stosowanych w gabinetach stomatologicznych. Wzmacnia szkliwo i hamuje rozwój bakterii odpowiedzialnych za ubytki.</p>
+                </div>
+                <div class="usage-card">
+                    <h4>2. Fluorowanie Wody Pitnej</h4>
+                    <p>W niektórych krajach dodawany do wody miejskiej w bardzo małych dawkach, aby masowo chronić populację przed próchnicą zębów.</p>
+                </div>
+                <div class="usage-card">
+                    <h4>3. Przemysł Aluminiowy</h4>
+                    <p>Stosowany jako topnik w produkcji aluminium. Obniża temperaturę topnienia surowców, co pozwala na ogromne oszczędności energii w procesie elektrolizy.</p>
+                </div>
+                <div class="usage-card">
+                    <h4>4. Środek Owadobójczy</h4>
+                    <p>Dzięki wysokiej toksyczności dla drobnych organizmów, bywa stosowany jako środek do zwalczania karaluchów i innych szkodników (pestycyd).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fun-fact">
+            <strong>Ciekawostka: Toksyczność</strong>
+            Mimo że pomaga chronić zęby, fluorek sodu w dużych stężeniach jest silnie toksyczny. Nadmiar fluoru w organizmie prowadzi do choroby zwanej fluorozą, która powoduje kruchość kości i plamy na zębach.
+        </div>
+
+        <div class="section">
+            <h3>V. Bezpieczeństwo i Magazynowanie</h3>
+            <div class="warning-zone">
+                <p><strong>UWAGA:</strong> Substancja toksyczna. Unikać wdychania pyłu. Przechowywać w szczelnych opakowaniach z dala od produktów spożywczych. W przypadku połknięcia natychmiast skontaktować się z lekarzem.</p>
+            </div>
+        </div>
+
+        <!-- NOWA SEKCJA VI -->
+        <div class="section">
+            <h3>VI. Występowanie Krzemianu Sodu w Gospodarstwie Domowym</h3>
+            <div class="usage-list">
+                <div class="usage-card">
+                    <h4>1. Proszki do prania i detergenty</h4>
+                    <p>Stabilizują wodę, zapobiegają osadzaniu się kamienia i zwiększają skuteczność środków piorących.</p>
+                </div>
+                <div class="usage-card">
+                    <h4>2. Środki czystości do kuchni i łazienki</h4>
+                    <p>Krzemian sodu znajduje się w niektórych płynach do mycia naczyń, żelach do usuwania kamienia i preparatach odtłuszczających.</p>
+                </div>
+                <div class="usage-card">
+                    <h4>3. Kleje i spoiwa domowe</h4>
+                    <p>Używany w niektórych klejach szkolnych i naprawczych, a także w amatorskich projektach modelarskich.</p>
+                </div>
+                <div class="usage-card">
+                    <h4>4. Preparaty antypoślizgowe i impregnaty</h4>
+                    <p>Stosowany w powłokach ochronnych drewna lub ceramiki, szczególnie w mieszkaniach, aby zabezpieczyć powierzchnie przed wilgocią.</p>
+                </div>
+            </div>
+        </div>
+        <!-- KONIEC SEKCJI VI -->
+
+    </div>
+</body>
+</html>

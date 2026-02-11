@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Jodek Potasu - Pełna Specyfikacja Edukacyjna</title>
+<style>
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #121212; color: #ddd; margin: 0; padding: 20px; line-height: 1.8; animation: fadeIn 0.8s ease-in; }
+.container { max-width: 900px; margin: 0 auto; background: #1e1e1e; padding: 50px; border-radius: 20px; border: 1px solid #333; box-shadow: 0 0 40px rgba(0,0,0,0.6); }
+.btn-back { display: inline-block; color: #00e5ff; text-decoration: none; border: 1px solid #00e5ff; padding: 10px 25px; border-radius: 50px; margin-bottom: 30px; transition: 0.3s; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+.btn-back:hover { background: #00e5ff; color: #000; box-shadow: 0 0 15px rgba(0, 229, 255, 0.4); }
+h1 { color: #fff; font-size: 3rem; margin-bottom: 5px; text-shadow: 0 0 10px rgba(0, 229, 255, 0.3); }
+.formula-large { font-family: 'Courier New', monospace; font-size: 4em; color: #00e5ff; font-weight: bold; margin-bottom: 10px; letter-spacing: -2px; text-shadow: 0 0 20px rgba(0, 229, 255, 0.6); display: inline-block; }
+.stat-bar-bg { width: 100%; height: 12px; background: #333; border-radius: 6px; margin: 15px 0 35px 0; }
+.stat-bar-fill { height: 100%; background: #00e5ff; border-radius: 6px; box-shadow: 0 0 15px #00e5ff; width: 35%; }
+.spec-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #252525; border-radius: 12px; overflow: hidden; border: 1px solid #333; }
+.spec-table td { padding: 18px; border-bottom: 1px solid #333; }
+.spec-label { color: #00e5ff; font-weight: bold; width: 40%; background: rgba(0, 229, 255, 0.05); }
+.section { margin-top: 60px; }
+.section h3 { color: #fff; font-size: 1.6rem; text-transform: uppercase; letter-spacing: 3px; border-left: 6px solid #00e5ff; padding-left: 20px; margin-bottom: 30px; }
+.theory-box { background: #1a2a2f; padding: 30px; border-radius: 15px; border-right: 4px solid #00e5ff; margin: 25px 0; border-left: 1px solid #333; }
+.equation-box { background: #252525; padding: 30px; border-radius: 10px; font-family: 'Courier New', monospace; color: #00e5ff; border: 1px dashed #555; text-align: center; font-size: 1.4em; margin: 25px 0; }
+img { width: 100%; height: 450px; object-fit: cover; border-radius: 20px; margin-bottom: 40px; border: 1px solid #444; }
+/* Styl dla zastosowań jedno pod drugim */
+.usage-list { display: flex; flex-direction: column; gap: 25px; }
+.usage-card { background: #252525; padding: 30px; border-radius: 15px; border-left: 4px solid #00e5ff; transition: 0.3s; }
+.usage-card:hover { background: #2a2a2a; transform: scale(1.01); }
+.usage-card h4 { color: #00e5ff; margin-top: 0; text-transform: uppercase; font-size: 1.1rem; margin-bottom: 10px; }
+.usage-card p { margin: 0; color: #ccc; font-size: 0.95rem; }
+.warning-zone { background: rgba(255, 82, 82, 0.05); border: 1px solid #ff5252; padding: 30px; border-radius: 15px; margin-top: 50px; position: relative; }
+.warning-zone::before { content: "!"; position: absolute; top: -20px; left: 20px; background: #ff5252; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5rem; }
+.fun-fact { background: linear-gradient(135deg, #1e1e1e, #2c3e50); border-radius: 15px; padding: 30px; margin-top: 50px; border: 1px solid #ffd700; }
+.fun-fact strong { color: #ffd700; font-size: 1.2rem; display: block; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+<div class="container">
+<a href="index.html" class="btn-back">← POWRÓT DO KATALOGU</a>
+<img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=90" alt="Laboratorium">
+<h1>Jodek Potasu</h1>
+<div class="formula-large">KI</div>
+<div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-top: 20px;">Profil Reaktywności Chemicznej:</div>
+<div class="stat-bar-bg"><div class="stat-bar-fill"></div></div>
+<div class="section">
+<h3>I. Wstęp Teoretyczny</h3>
+<p>Jodek potasu (łac. <em>Kalii iodidum</em>) jest związkiem nieorganicznym o kluczowym znaczeniu dla biologii i przemysłu. Występuje w postaci bezbarwnych lub białych kryształów o słonym, gorzkawym smaku. Jest to sól potasowa kwasu jodowodorowego, która charakteryzuje się wyjątkowo wysoką higroskopijnością oraz doskonałą rozpuszczalnością w rozpuszczalnikach polarnych.</p>
+<div class="theory-box">
+W strukturze krystalicznej jodek potasu wykazuje wiązania jonowe o wysokiej energii sieciowej. Ważną cechą chemiczną jest łatwość utleniania jonu jodkowego do wolnego jodu pod wpływem silnych utleniaczy lub promieniowania UV, co objawia się charakterystycznym żółknięciem preparatu.
+</div>
+</div>
+<div class="section">
+<h3>II. Szczegółowe Dane Techniczne</h3>
+<table class="spec-table">
+<tr><td class="spec-label">Numer CAS</td><td>7681-11-0</td></tr>
+<tr><td class="spec-label">Masa molowa</td><td>166,0028 g/mol</td></tr>
+<tr><td class="spec-label">Stan skupienia</td><td>Stały (krystaliczny)</td></tr>
+<tr><td class="spec-label">Gęstość</td><td>3,12 g/cm³</td></tr>
+<tr><td class="spec-label">Temperatura topnienia</td><td>681 °C</td></tr>
+<tr><td class="spec-label">Temperatura wrzenia</td><td>1330 °C</td></tr>
+<tr><td class="spec-label">Rozpuszczalność w wodzie</td><td>1430 g/dm³ (25°C)</td></tr>
+<tr><td class="spec-label">Współczynnik załamania</td><td>1,677</td></tr>
+</table>
+</div>
+<div class="section">
+<h3>III. Procesy Otrzymywania</h3>
+<p>Główna ścieżka syntezy przemysłowej opiera się na reakcji jodanu potasu z węglem lub bezpośredniej reakcji wodorotlenku potasu z jodem pierwiastkowym:</p>
+<div class="equation-box">
+6KOH + 3I₂ → 5KI + KIO₃ + 3H₂O
+</div>
+<p>W kolejnym etapie jodan potasu ($KIO_3$) jest redukowany, aby zmaksymalizować wydajność czystego jodku potasu, który następnie poddawany jest wielokrotnej krystalizacji w celu uzyskania czystości analitycznej.</p>
+</div>
+<div class="section">
+<h3>IV. Szerokie Zastosowanie w Przemyśle i Nauce</h3>
+<div class="usage-list">
+<div class="usage-card">
+<h4>1. Ochrona Radiologiczna</h4>
+<p>Jest to najważniejsze zastosowanie w kontekście bezpieczeństwa publicznego. W przypadku awarii jądrowej, podawanie jodku potasu ma na celu nasycenie tarczycy stabilnym jodem. Dzięki temu organ ten nie przyjmuje radioaktywnego izotopu jodu-131, co zapobiega chorobie popromiennej i nowotworom.</p>
+</div>
+<div class="usage-card">
+<h4>2. Medycyna i Farmakologia</h4>
+<p>Stosowany w leczeniu niedoborów jodu oraz jako środek wykrztuśny w chorobach dróg oddechowych. Jest również niezbędny do produkcji płynu Lugola, który posiada silne właściwości odkażające i antyseptyczne.</p>
+</div>
+<div class="usage-card">
+<h4>3. Przemysł Spożywczy</h4>
+<p>Wykorzystywany jako kluczowy dodatek do soli kuchennej (sól jodowana). Zapobiega to powstawaniu wola endemicznego oraz wspiera prawidłowy rozwój umysłowy u dzieci poprzez regulację pracy hormonów tarczycy.</p>
+</div>
+<div class="usage-card">
+<h4>4. Fotografia i Optyka</h4>
+<p>W tradycyjnej fotografii analogowej jodek potasu służył do wytwarzania światłoczułego jodku srebra. W optyce nowoczesnej kryształy KI domieszkowane talem są używane jako scyntylatory w detektorach promieniowania rentgenowskiego.</p>
+</div>
+<div class="usage-card">
+<h4>5. Analiza Chemiczna (Jodometria)</h4>
+<p>Służy jako podstawowy odczynnik w chemii analitycznej do oznaczania stężenia utleniaczy (np. chloru w wodzie basenowej). Reakcja opiera się na wydzielaniu jodu z roztworu KI, który następnie miareczkuje się tiosiarczanem sodu.</p>
+</div>
+<div class="usage-card">
+<h4>6. Kataliza Laboratoryjna</h4>
+<p>Znany z roli katalizatora w efektownych reakcjach chemicznych, takich jak gwałtowny rozkład nadtlenku wodoru (doświadczenie "pasta do zębów dla słonia"), gdzie drastycznie obniża energię aktywacji reakcji.</p>
+</div>
+</div>
+</div>
+<div class="fun-fact">
+<strong>Ciekawostka: Chemiczny Kameleon</strong> Czy wiesz, że jodek potasu jest bezbarwny, ale po dodaniu do niego odrobiny skrobi i utleniacza, roztwór natychmiast zmienia kolor na ciemnogranatowy? To jedna z najbardziej czułych reakcji wykrywania skrobi, stosowana powszechnie w testach jakości żywności.
+</div>
+<div class="section">
+<h3>V. Bezpieczeństwo i Magazynowanie</h3>
+<div class="warning-zone">
+<p><strong>Procedury MSDS:</strong> Substancja nie jest sklasyfikowana jako toksyczna w małych ilościach, jednak pył może powodować silne podrażnienia dróg oddechowych i oczu. Przechowywać wyłącznie w oryginalnych, ciemnych opakowaniach (szkło oranżowe), z dala od kwasów i silnych utleniaczy. Chronić przed bezpośrednim działaniem promieni słonecznych.</p>
+</div>
+</div>
+
+<!-- ===== DODANA SEKCJA VI ===== -->
+<div class="section">
+<h3>VI. Jodek Potasu w Gospodarstwie Domowym</h3>
+<div class="usage-list">
+
+<div class="usage-card">
+<h4>1. Sól Jodowana</h4>
+<p>Najpowszechniejsze źródło jodku potasu w domu. Dodawany do soli kuchennej w celu zapobiegania niedoborom jodu i wspierania prawidłowej pracy tarczycy.</p>
+</div>
+
+<div class="usage-card">
+<h4>2. Tabletki z Jodkiem Potasu</h4>
+<p>Przechowywane w domowej apteczce jako środek ochrony tarczycy w sytuacjach zagrożenia radiacyjnego.</p>
+</div>
+
+<div class="usage-card">
+<h4>3. Płyn Lugola</h4>
+<p>Roztwór zawierający jod i jodek potasu, stosowany do dezynfekcji oraz w celach medycznych.</p>
+</div>
+
+<div class="usage-card">
+<h4>4. Suplementy Diety</h4>
+<p>Preparaty wspomagające utrzymanie prawidłowego poziomu jodu w organizmie.</p>
+</div>
+
+<div class="usage-card">
+<h4>5. Preparaty Antyseptyczne</h4>
+<p>Niektóre środki odkażające zawierają związki jodu stabilizowane przy użyciu jodku potasu.</p>
+</div>
+
+</div>
+</div>
+
+<div style="margin-top: 50px; text-align: center; color: #666; font-size: 0.8rem; border-top: 1px solid #333; padding-top: 20px;">
+
+</div>
+</div>
+</body>
+</html>
